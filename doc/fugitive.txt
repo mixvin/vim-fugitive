@@ -24,6 +24,12 @@ that are part of Git repositories).
                         open for the current repository, it is focused
                         instead.  Press g?  or see |fugitive-maps| for usage.
 
+                                                *g:fugitive_status_log_format*
+                        Format of log messages for "Unpushed" and "Unpulled"
+                        sections of a summary window. Default:
+>
+                        let g:fugitive_status_log_format = '%h%x09%s'
+
                                                 *:Git*
 :Git {args}             Run an arbitrary git command and display any output.
                         On UNIX this uses a pty and on other platforms it uses
